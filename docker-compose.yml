@@ -1,0 +1,10 @@
+version: "3.7"
+
+services:
+  qdirstat:
+    image: jlesage/qdirstat
+    volumes:
+      - "/:/storage:ro"
+    ports:
+      - 5900:5900
+      - 5800:5800
